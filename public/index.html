@@ -10,10 +10,14 @@
     <section>
       <h1>Weather API</h1>
       <span>Please enter your location</span>
-      <input type="text">
-      <button>search</button>
+      <input id="searchBox" type="text" maxlength="2048" autocomplete="off" >
+      <button onclick="runSearch()">Search</button>
     </section>
-
+    <section>
+      <section id="location"></section>
+      <section id="currentTemp"></section>
+      <section id="humidity"></section>
+    </section>
     <script src="./main.js" charset="utf-8"></script>
   </body>
 </html>
